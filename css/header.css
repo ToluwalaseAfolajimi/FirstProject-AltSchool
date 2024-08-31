@@ -1,0 +1,45 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(107, 70, 241);
+    padding: 32px;
+    flex-direction: row;
+
+}
+
+header h1{
+    font-size: 32px;
+    color:rgb(248, 248, 244);
+    margin: 0;
+}
+
+.nav{
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    color:beige;
+    margin: 0;
+}
+
+nav a{
+    text-decoration: none;
+    color: #1a1a1a;
+}
+
+ nav a:hover{
+    color:aliceblue;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    justify-content: space-between;
+    gap: 16px;
+    text-transform: uppercase;
+}
+
+li{
+    font-size: 12px;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Page</title>
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/media-styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Media Page</h1>
+        <nav aria-label="navigation">
+            <ul class="nav">
+                <li> <a href="application.html">Application Page</a></li>
+                <li> <a href="index.html">Profile Page</a></li>
+                <li> <a href="courses.html">AltSchool Courses</a></li>
+                <li aria-current="page">Media Page</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Responsive Image file-->
+     <h1>This media page contains responsive images, audio of different format and video for you to enjoy.</h1>
+        <h3>Image</h3>
+
+        <picture>
+            <!-- Source for  mobile screens-->
+            <source class="images" srcset="../Assets/Images/Lase600W.jpg" media="(max-width: 600px)">
+
+            <!-- Source for Tablet screens-->
+            <source class="images" srcset="../Assets/Images/Lase900W.jpg" media="(max-width: 900px)">
+            
+            <!-- Fallback Image -->
+            <img class="images" src="../Assets/Images/Lase2.jpg" alt="Responsive image">
+        </picture>
+
+        <!-- Audio -->
+     <h3>Audio</h3>
+
+     <div class="audio">
+        <audio controls preload="auto">
+            <source src="../Assets/Audio/AGALLIAO-Pastor-Emmanuel-Iren-ft-Nathaniel-Bassey.mp3" type="audio/mpeg">
+            <source src="../Assets/Audio/AGALLIAO-Pastor-Emmanuel-Iren-ft-Nathaniel-Bassey.wav" type="audio/wav">
+            Your browser does not support the audio element
+        </audio>
+    </div>
+
+     <!-- Video -->
+     <h3>Video</h3>
+
+    <div class="video">
+        <video src="../Assets/Video/Video.mp4" controls preload="auto" width="400px" height="200px">
+        </video>
+    </div>
+</body>
+</html>
